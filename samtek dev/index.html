@@ -5,6 +5,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Maquettes site Booki</title>
    <link rel="stylesheet" href="css/style.css">
+
    <script src="script.js"></script>
 </head>
 <body>
@@ -17,31 +18,36 @@
       </ul>
     </nav>
   </header>
-  <main class="test">
+  <main>
+
     <!-- Le contenu principale de la page -->
-    <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
-    <h3>En plein centre-ville ou en pleine nature</h3>
+   <div class="titre">
+        <h2 id="bold-title"> Trouvez votre hébergement pour des vacances de rêve</h2>
+        <h3 id="light-title">En plein centre-ville ou en pleine nature</h3>
+  </div>
    
-     <form> 
-      <button id="geolocation-button">📍</button>
+     <form class="formbutton"> 
+
+      <button id="geolocation-button"> <img class="vector" src="asset/Images Booki/logo/Vector.png" alt="picto locat" ></button>
       <input type="text" name=text" class="search" placeholder="Marseille, France">
       <input type="submit" name="submit" class="submit" value="Rechercher">
+   
     </form>
 
-    <div>Filtres <button>Économique</button>
-                 <button>Familial</button>
-                 <button>Romantique</button>
-                 <button>Animaux autorisés</button>
+    <div class="filter-bar">
+      <span class="Filtres">Filtres</span>  
+        <button class="filters-button"> <img class="picto-filters" src="asset/Images Booki/logo/VectorDollars.png" alt="picto dollars">Économique</button>
+        <button class="filters-button"> <img class="picto-filters" src="asset/Images Booki/logo/VectorMan.png" alt="picto dollars">Familial</button>
+        <button class="filters-button"> <img class="picto-filters" src="asset/Images Booki/logo/VectorCoeur.png" alt="picto dollars" >Romantique</button>
+        <button class="filters-button"> <img class="picto-filters" src="asset/Images Booki/logo/VectorDog.png" alt="picto dollars">Animaux autorisés</button>
     </div>
 
-  <div> <img src="img_avatar.png"> </div>
+  <div class="mini-ligne"> 
+    <button id=circle-infobar> <img src="asset/Images Booki/logo/VectorInfo.png" style="width: 4px;height:10px;" alt="picto info-bar"> </button>
+    <span id="mini-text"> Plus de 500 logements sont disponibles dans cette ville </span>
+ </div>
 
-    <div class="card">
-      <div class="container">
-        Hébergements à Marseille
-        <p>Architect & Engineer</p>
-      </div>
-    </div>
+    <div class="card"> </div>
     
 
   </main>
