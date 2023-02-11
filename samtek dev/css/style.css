@@ -1,22 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  
 }
 
 .navlinks li {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 500;
   font-size: 16px;
   color: black;
   text-decoration: none;
 }
 
-header { 
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -48,8 +47,6 @@ header {
   color: #0065fc;
 }
 
-
-
 /* Styles pour les écrans de téléphone */
 @media (max-width: 767px) {
   header {
@@ -76,110 +73,96 @@ header {
   .navlinks {
     width: 100%;
     flex-wrap: wrap;
-align-items: center;
-}
+    align-items: center;
+  }
 
-.logo {
-width: 100%;
-text-align: center;
-margin-bottom: 20px;
-}
+  .logo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
 
-.navlinks li {
-margin-right: 0;
-margin-bottom: 10px;
-width: 50%;
-text-align: center;
-}
-
-
+  .navlinks li {
+    margin-right: 0;
+    margin-bottom: 10px;
+    width: 50%;
+    text-align: center;
+  }
 }
 
 /* Style pour ligne bleue sur les liens en mode mobile START */
 @media (max-width: 767px) {
-.navlinks li {
-position: relative;
-margin-top: 48.56px;  
-}
-
- .logo{
-    margin-top:30.53px
-  } 
-  
-  .test {
-    display: flex;
-    align-items: center;
-    padding: 30px 10%;
+  .navlinks li {
+    position: relative;
+    margin-top: 48.56px;
   }
-  
 
-.navlinks li a:hover::before,
-.navlinks li a:active::before {
-      content: "";
-      position: absolute;
-      bottom: -23.09px;
-      left: 0;
-      width: 100%;
-      height: 2px;
-      background-color: #0065fc;}
+  .logo {
+    margin-top: 30.53px;
+  }
 
-.navlinks li a:hover::before {
-transform: scaleX(1);
-}
-}
+  .navlinks li a:hover::before,
+  .navlinks li a:active::before {
+    content: "";
+    position: absolute;
+    bottom: -23.09px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #0065fc;
+  }
 
-.navlinks li a::before {
-content: "";
-position: absolute;
-bottom: -23.09px;
-left: 0;
-width: 100%;
-height: 2px;
-background-color: #F2F2F2;
-transform: scaleX(1);
+  .navlinks li a:hover::before {
+    transform: scaleX(1);
+  }
+  .navlinks li a::before {
+    content: "";
+    position: absolute;
+    bottom: -23.09px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #f2f2f2;
+    transform: scaleX(1);
+  }
 }
 /* Style pour ligne bleue sur les liens en mode mobile END */
 
 .titre {
   flex-wrap: wrap;
   padding: 30px 10%;
-
 }
 
 #bold-title {
   display: block;
   color: black;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 22px;
   font-weight: 700;
 }
 
 #light-title {
   color: black;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 16px;
   font-weight: 400;
   margin-top: 8px;
 }
-
 
 .formbutton {
   min-height: 49px;
   display: flex;
   align-items: center;
   padding: 20px 10%;
-  
-  
 }
 
-#geolocation-button{
+#geolocation-button {
   width: 50px;
   height: 49px;
   background-color: rgba(242, 242, 242, 1);
   border-radius: 15px 0px 0px 15px;
   border: 1px solid rgba(242, 242, 242, 1);
   cursor: pointer;
-
 }
 
 .vector {
@@ -192,28 +175,32 @@ transform: scaleX(1);
 }
 
 .search {
-  font-family: 'Raleway', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  color: #000000;;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 21px;
-  letter-spacing: 0em;
-  text-align: center;
   height: 49px;
   width: 272px;
   left: 0px;
   top: 0px;
   border: 1px solid rgba(242, 242, 242, 1);
   cursor: pointer;
+  padding-left: 15px;
+}
+
+.search::placeholder {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
 }
 
 .submit {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 700;
-  color : rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1);
   line-height: 21px;
   letter-spacing: 0em;
   text-align: center;
@@ -225,7 +212,6 @@ transform: scaleX(1);
   background: rgba(0, 101, 252, 1);
   border: 1px solid rgba(0, 101, 252, 1);
   cursor: pointer;
-
 }
 
 /* j'arrive pas aligner filtre avec les boutons  */
@@ -242,8 +228,7 @@ transform: scaleX(1);
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  align-items: baseline;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -261,7 +246,7 @@ transform: scaleX(1);
   left: 366px;
   top: 280px;
   border-radius: 25px;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -269,21 +254,20 @@ transform: scaleX(1);
   padding: 0px 20px;
   cursor: pointer;
   background-color: #ffffff;
-  }
+  align-self: baseline;
+}
 
-  .filters-button:hover {
-    background-color: rgba(222, 235, 255, 1)
-  }
-  
+.filters-button:hover {
+  background-color: rgba(222, 235, 255, 1);
+}
 
-.picto-filters{
+.picto-filters {
   height: 22px;
   width: 22px;
   left: 0px;
   top: 0px;
   border-radius: 0px;
   margin-right: 10px;
-  
 }
 
 .mini-ligne {
@@ -306,13 +290,12 @@ transform: scaleX(1);
 }
 
 #mini-text {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 19px;
   letter-spacing: 0em;
   text-align: left;
-
 }
 
 .card {
@@ -324,6 +307,4 @@ transform: scaleX(1);
   top: 0px;
   border-radius: 20px;
   background-color: rgba(242, 242, 242, 1);
-
 }
-
