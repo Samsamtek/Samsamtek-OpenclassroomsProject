@@ -5,6 +5,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  
 }
 
 .navlinks li {
@@ -24,6 +25,8 @@ header {
 
 .logo {
   cursor: pointer;
+  width: 61.09px;
+  height: 19px;
 }
 
 .navlinks {
@@ -214,7 +217,6 @@ header {
   cursor: pointer;
 }
 
-/* j'arrive pas aligner filtre avec les boutons  */
 
 .Filtres {
   display: flex;
@@ -222,19 +224,17 @@ header {
   justify-content: center;
 }
 
-/* essaie autre choses   */
-
 .filter-bar {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
-  max-width: 800px;
-  margin: 20px 10%;
+  max-width: 950px;
+  margin: 20px 9%;
 }
 
 .filters-button {
@@ -289,6 +289,11 @@ header {
   background-color: #ffffff;
 }
 
+#circle-infobar img {
+  width: 4px;
+  height: 10px;
+  }
+  
 #mini-text {
   font-family: "Raleway", sans-serif;
   font-size: 16px;
@@ -300,6 +305,9 @@ header {
 
 .card {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
   margin: 30px 10%;
   height: 626px;
   width: 880px;
@@ -307,4 +315,147 @@ header {
   top: 0px;
   border-radius: 20px;
   background-color: rgba(242, 242, 242, 1);
+}
+
+#titlecards {
+  margin-left: 40px;
+  margin-top: 42px;
+  display: block;
+  color: black;
+  font-family: "Raleway", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+
+
+.wrapper {
+  margin-top: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  grid-auto-rows: minmax(100px, auto);
+  
+}
+
+.downcard{
+  margin-left: 16px;
+  border-radius: 0%;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.downcardlight{
+  margin-left: 16px;
+  border-radius: 0%;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16.44px;
+}
+
+.one {
+  width: 246px;
+  height: 199px;
+  background-color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  
+}
+#star{
+  max-width: 70px;
+  max-height: 12px;
+  margin-top: 9px;
+  border-radius: 0%;
+  border: 0px solid #FFFFFF;
+  
+}
+
+.one img {
+  width: 100%;
+  height: 125px;
+  border-radius: 20px 20px 0px 0px;
+  border: 5px solid #FFFFFF;
+  
+}
+
+.two {
+  width: 246px;
+  height: 199px;
+  background-color: white;
+  border-radius: 20px;
+  cursor: pointer;
+
+}
+.two img {
+  width: 100%;
+  height: 125px;
+  border-radius: 20px 20px 0px 0px;
+  border: 5px solid #FFFFFF;
+}
+
+.three {
+  width: 246px;
+  height: 199px;
+  background-color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.three img {
+  width: 100%;
+  height: 125px;
+  border-radius: 20px 20px 0px 0px;
+  border: 5px solid #FFFFFF;
+}
+
+.four {
+  width: 246px;
+  height: 199px;
+  background-color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.four img {
+  width: 100%;
+  height: 125px;
+  border-radius: 20px 20px 0px 0px;
+  border: 5px solid #FFFFFF;
+}
+
+.five {
+  width: 246px;
+  height: 199px;
+  background-color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.five img {
+  width: 100%;
+  height: 125px;
+  border-radius: 20px 20px 0px 0px;
+  border: 5px solid #FFFFFF;
+}
+
+.six {
+  width: 250px;
+  height: 200px;
+  background-color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.six img {
+  width: 100%;
+  height: 125px;
+  border-radius: 20px 20px 0px 0px;
+  border: 5px solid #FFFFFF;
 }
