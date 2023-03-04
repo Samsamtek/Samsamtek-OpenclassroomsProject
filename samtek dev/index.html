@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
   <title>Maquettes site Booki</title>
   <link rel="stylesheet" href="css/style.css" />
 
@@ -37,20 +37,22 @@
       <input type="submit" name="submit" class="submit" value="Rechercher" />
     </form>
 
-    <section class="filter-bar">
-      <span class="Filtres">Filtres</span>
-      <button class="filters-button">
-        <img class="picto-filters" src="asset/Images Booki/logo/VectorDollars.png" alt="picto dollars" />Économique
-      </button>
-      <button class="filters-button">
-        <img class="picto-filters" src="asset/Images Booki/logo/VectorMan.png" alt="picto dollars" />Familial
-      </button>
-      <button class="filters-button">
-        <img class="picto-filters" src="asset/Images Booki/logo/VectorCoeur.png" alt="picto dollars" />Romantique
-      </button>
-      <button class="filters-button">
-        <img class="picto-filters" src="asset/Images Booki/logo/VectorDog.png" alt="picto dollars" />Animaux autorisés
-      </button>
+    <section id="fusion-filtres">
+      <p class="Filtres">Filtres</p>
+      <div class="filter-bar">
+        <button class="filters-button">
+          <img class="picto-filters" src="asset/Images Booki/logo/VectorDollars.png" alt="picto dollars" />Économique
+        </button>
+        <button class="filters-button">
+          <img class="picto-filters" src="asset/Images Booki/logo/VectorMan.png" alt="picto dollars" />Familial
+        </button>
+        <button class="filters-button">
+          <img class="picto-filters" src="asset/Images Booki/logo/VectorCoeur.png" alt="picto dollars" />Romantique
+        </button>
+        <button class="filters-button">
+          <img class="picto-filters" src="asset/Images Booki/logo/VectorDog.png" alt="picto dollars" />Animaux autorisés
+        </button>
+      </div>
     </section>
 
     <div class="mini-ligne">
@@ -64,88 +66,93 @@
 
     <section class="testingflex"> <!-- rajout d'une section pour créer les cars logement populaires -->
       <div class="card">
-        <H2 id="titlecards">Hébergements à Marseille</H2>
-        <container>
-          <div class="wrapper">
-            <article class="one"><img src="asset/Images Booki/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
-                alt="images auberges la canebiere">
-              <div><!-- cganger pour les meme nom de classe et ajoute articles -->
-                <div class="downcard">Auberge La Canebiere</div>
-                <div class="downcardlight">Nuit à partir 25€</div>
-                <div class="downcard"><img id="star" src="asset/Images Booki/logo/Stars.png" alt="Stars">
-                </div>
+        <H2 id="titlecardsHB">Hébergements à Marseille</H2>
+
+        <div class="wrapper">
+          <article class="one"><img src="asset/Images Booki/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+              alt="images auberges la canebiere">
+            <div><!-- cganger pour les meme nom de classe et ajoute articles -->
+              <div class="downcard">Auberge La Canebiere</div>
+              <div class="downcardlight">Nuit à partir 25€</div>
+              <div class="downcard"><img id="star" src="asset/Images Booki/logo/Stars.png" alt="Stars">
               </div>
-            </article>
-            <article class="two"><img src="asset/Images Booki/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
-                alt="images auberges la canebiere">
-              <div class="downcard">Hôtel du port</div>
-              <div class="downcardlight">Nuit à partir 52€</div>
-              <div class="downcard"><img id="star" src="asset/Images Booki/logo/Stars.png" alt="Stars"></div>
-            </article>
-            <article class="three"><img
-                src="asset/Images Booki/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
-                alt="images auberges la canebiere">
-              <div class="downcard">Hôtel Les Mouettes</div>
-              <div class="downcardlight">Nuit à partir 76€</div>
-              <div class="downcard"><img id="star" src="asset/Images Booki/logo/Stars.png" alt="Stars"></div>
-            </article>
-            <div class="four"><img src="asset/Images Booki/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
-                alt="images auberges la canebiere">
-              <div class="downcard">Hôtel de la Mer</div>
-              <div class="downcardlight">Nuit à partir 46€</div>
-              <div class="downcard"><img id="star" src="asset/Images Booki/logo/Stars.png" alt="Stars"></div>
             </div>
-            <article class="five"><img src="asset/Images Booki/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
-                alt="images auberges la canebiere">
-              <div class="downcard">Auberge Le Panier</div>
-              <div class="downcardlight">Nuit à partir 23€</div>
-              <div class="downcard"><img id="star" src="asset/Images Booki/logo/Stars.png" alt="Stars"></div>
-            </article>
-            <article class="six">
-              <img src="asset/Images Booki/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
-                alt="images auberges la canebiere">
-              <div class="downcard">Hôtel chez Amina</div>
-              <div class="downcardlight">Nuit à partir 96€</div>
-              <div class="downcard"><img id="star" src="asset/Images Booki/logo/Stars.png" alt="Stars"></div>
-            </article>
+          </article>
+          <article class="one"><img src="asset/Images Booki/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+              alt="images auberges la canebiere">
+            <div class="downcard">Hôtel du port</div>
+            <div class="downcardlight">Nuit à partir 52€</div>
+            <div class="downcard"><img id="star" src="asset/Images Booki/logo/Stars.png" alt="Stars"></div>
+          </article>
+          <article class="one"><img src="asset/Images Booki/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+              alt="images auberges la canebiere">
+            <div class="downcard">Hôtel Les Mouettes</div>
+            <div class="downcardlight">Nuit à partir 76€</div>
+            <div class="downcard"><img id="star" src="asset/Images Booki/logo/Stars.png" alt="Stars"></div>
+          </article>
+          <div class="one"><img src="asset/Images Booki/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+              alt="images auberges la canebiere">
+            <div class="downcard">Hôtel de la Mer</div>
+            <div class="downcardlight">Nuit à partir 46€</div>
+            <div class="downcard"><img id="star" src="asset/Images Booki/logo/Stars.png" alt="Stars"></div>
           </div>
-          <div class="cardsclose">Afficher plus</div>
-        </container>
+          <article class="one"><img src="asset/Images Booki/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+              alt="images auberges la canebiere">
+            <div class="downcard">Auberge Le Panier</div>
+            <div class="downcardlight">Nuit à partir 23€</div>
+            <div class="downcard"><img id="star" src="asset/Images Booki/logo/Stars.png" alt="Stars"></div>
+          </article>
+          <article class="one">
+            <img src="asset/Images Booki/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+              alt="images auberges la canebiere">
+            <div class="downcard">Hôtel chez Amina</div>
+            <div class="downcardlight">Nuit à partir 96€</div>
+            <div class="downcard"><img id="star" src="asset/Images Booki/logo/Stars.png" alt="Stars"></div>
+          </article>
+        </div>
+        <div class="cardsclose">Afficher plus</div>
+
       </div>
-      <div class="testingflex">
+      <div class="container-pluspop">
         <div class="pluspop">
           <div>
             <H2 id="titlecards">Les plus populaires <img id="stonkslogo" src="asset/Images Booki/logo/Stonks Vector.png"
                 alt="Stonks"> </H2>
           </div>
-          <div class="one1"><img src="asset/Images Booki/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
-              alt="Hôtel le soleil du matin">
-            <div>
-              <div class="downcard">Hôtel Le soleil du matin </div>
-              <div class="downcardlight">Nuit à partir 128€</div>
-              <div class="downcard"><img id="star" src="asset/Images Booki/logo/Stars.png" alt="Stars">
+          <div class="container-onepage">
+            <div class="one-page"><img
+                src="asset/Images Booki/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                alt="Hôtel le soleil du matin">
+              <div>
+                <div class="downcard">Hôtel Le soleil du matin </div>
+                <div class="downcardlight">Nuit à partir 128€</div>
+                <div class="downcard"><img id="star" src="asset/Images Booki/logo/Stars.png" alt="Stars">
+                </div>
+              </div>
+            </div>
+            <div class="one-page"><img
+                src="asset/Images Booki/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
+                alt="Hôtel le soleil du matin">
+              <div>
+                <div class="downcard">Chambres d'hôtes Au coeur de l'eau </div>
+                <div class="downcardlight">Nuit à partir 71€</div>
+                <div class="downcard"><img id="star" src="asset/Images Booki/logo/Stars.png" alt="Stars">
+                </div>
+              </div>
+            </div>
+            <div class="one-page"><img
+                src="asset/Images Booki/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+                alt="Hôtel Bleu et Blanc">
+              <div>
+                <div class="downcard">Hôtel Bleu et Blanc</div>
+                <div class="downcardlight">Nuit à partir 68€</div>
+                <div class="downcard"><img id="star" src="asset/Images Booki/logo/Stars.png" alt="Stars">
+                </div>
               </div>
             </div>
           </div>
-          <div class="two1"><img src="asset/Images Booki/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
-              alt="Hôtel le soleil du matin">
-            <div>
-              <div class="downcard">Chambres d'hôtes Au coeur de l'eau </div>
-              <div class="downcardlight">Nuit à partir 71€</div>
-              <div class="downcard"><img id="star" src="asset/Images Booki/logo/Stars.png" alt="Stars">
-              </div>
-            </div>
-          </div>
-          <div class="three1"><img
-              src="asset/Images Booki/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
-              alt="Hôtel Bleu et Blanc">
-            <div>
-              <div class="downcard">Hôtel Bleu et Blanc</div>
-              <div class="downcardlight">Nuit à partir 68€</div>
-              <div class="downcard"><img id="star" src="asset/Images Booki/logo/Stars.png" alt="Stars">
-              </div>
-            </div>
-          </div>
+        </div>
+      </div>
     </section>
     <section id="bottomact">
       <H2 id="titlecards">Activités à Marseille</H2>

@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -50,87 +51,7 @@ header {
   color: #0065fc;
 }
 
-/* Styles pour les écrans de téléphone */
-@media (max-width: 767px) {
-  header {
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .logo {
-    width: 100%;
-    text-align: center;
-    order: 1;
-    object-fit: contain;
-  }
-
-  nav {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    order: 2;
-  }
-
-  .navlinks {
-    width: 100%;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-
-  .logo {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-
-  .navlinks li {
-    margin-right: 0;
-    margin-bottom: 10px;
-    width: 50%;
-    text-align: center;
-  }
-}
-
-/* Style pour ligne bleue sur les liens en mode mobile START */
-@media (max-width: 767px) {
-  .navlinks li {
-    position: relative;
-    margin-top: 48.56px;
-  }
-
-  .logo {
-    margin-top: 30.53px;
-  }
-
-  .navlinks li a:hover::before,
-  .navlinks li a:active::before {
-    content: "";
-    position: absolute;
-    bottom: -23.09px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #0065fc;
-  }
-
-  .navlinks li a:hover::before {
-    transform: scaleX(1);
-  }
-  .navlinks li a::before {
-    content: "";
-    position: absolute;
-    bottom: -23.09px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #f2f2f2;
-    transform: scaleX(1);
-  }
-}
-/* Style pour ligne bleue sur les liens en mode mobile END */
+/* salut mec verifie ton code aujoud'hui // il est 1h du mat la mtn tu voie flou ta du faire des erreurs / */
 
 .titre {
   flex-wrap: wrap;
@@ -218,11 +139,33 @@ header {
   cursor: pointer;
 }
 
+/*ici j'ai un probleme avec le mots filtres j'arrive pas a comprendre comment mettre mon mots et mes bouton sur la même lignes
+#fusion-filtres{
+
+  display: flex
+  justify-content: flex-start
+  background-color: red
+
+  /*  oublie pas de remttre les (;) !!!!! 
+ici j'ai un probleme avec le mots filtres j'arrive pas a comprendre comment mettre mon mots et mes bouton sur la même lignes */
+
+#fusion-filtres{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
 
 .Filtres {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  align-self: center ;
+  padding: 0px 0px 0px 10%;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: center;
+
+  
 }
 
 .filter-bar {
@@ -235,7 +178,7 @@ header {
   font-size: 17px;
   line-height: 20px;
   max-width: 950px;
-  margin: 20px 9%;
+  margin: 20px ;
 }
 
 .filters-button {
@@ -256,6 +199,7 @@ header {
   cursor: pointer;
   background-color: #ffffff;
   align-self: baseline;
+  margin-left: 30px;
 }
 
 .filters-button:hover {
@@ -326,16 +270,25 @@ header {
   font-weight: 700;
 }
 
+#titlecardsHB {
+  margin-left: 40px;
+  margin-top: 20px;
+  display: block;
+  color: black;
+  font-family: "Raleway", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+}
 
 
 .wrapper {
   margin-top: 20px;
   margin-left: 40px;
   margin-right: 40px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 30px;
-  grid-auto-rows: minmax(100px, auto);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
   
 }
 
@@ -365,6 +318,7 @@ header {
   background-color: white;
   border-radius: 20px;
   cursor: pointer;
+  margin-bottom: 30px;
   
 }
 #star{
@@ -384,84 +338,8 @@ header {
   
 }
 
-.two {
-  width: 246px;
-  height: 199px;
-  background-color: white;
-  border-radius: 20px;
-  cursor: pointer;
-
-}
-.two img {
-  width: 100%;
-  height: 125px;
-  border-radius: 20px 20px 0px 0px;
-  border: 5px solid #FFFFFF;
-}
-
-.three {
-  width: 246px;
-  height: 199px;
-  background-color: white;
-  border-radius: 20px;
-  cursor: pointer;
-}
-
-.three img {
-  width: 100%;
-  height: 125px;
-  border-radius: 20px 20px 0px 0px;
-  border: 5px solid #FFFFFF;
-}
-
-.four {
-  width: 246px;
-  height: 199px;
-  background-color: white;
-  border-radius: 20px;
-  cursor: pointer;
-}
-
-.four img {
-  width: 100%;
-  height: 125px;
-  border-radius: 20px 20px 0px 0px;
-  border: 5px solid #FFFFFF;
-}
-
-.five {
-  width: 246px;
-  height: 199px;
-  background-color: white;
-  border-radius: 20px;
-  cursor: pointer;
-}
-
-.five img {
-  width: 100%;
-  height: 125px;
-  border-radius: 20px 20px 0px 0px;
-  border: 5px solid #FFFFFF;
-}
-
-.six {
-  width: 250px;
-  height: 200px;
-  background-color: white;
-  border-radius: 20px;
-  cursor: pointer;
-}
-
-.six img {
-  width: 100%;
-  height: 125px;
-  border-radius: 20px 20px 0px 0px;
-  border: 5px solid #FFFFFF;
-}
-
 .cardsclose {
   margin-left: 40px;
-  margin-top: 40px;
   display: block;
   color: black;
   font-family: "Raleway", sans-serif;
@@ -484,10 +362,10 @@ header {
 }
 
 .testingflex {
-  align-content: flex-end;
+  align-content: center;
   display: flex;
   align-items: flex-end;
-  justify-content: flex-end;
+  justify-content: center;
   
 }
 
@@ -502,7 +380,7 @@ header {
 
 }
 
-.one1 {
+.one-page {
   display: flex;
   width: 344px;
   height: 144px;
@@ -514,49 +392,12 @@ header {
   margin-top: 26px;
 }
 
-.one1 img {
+.one-page img {
   width: 137px;
   height: 144px;
   border-radius: 20px 0px 0px 20px;
   border: 5px solid #FFFFFF;
   
-}
-.two1 {
-  display: flex;
-  width: 344px;
-  height: 144px;
-  background-color: white;
-  border-radius: 20px;
-  cursor: pointer;
-  align-items: center;
-  margin-left: 40px;
-  margin-top: 33px;
-}
-
-.two1 img {
-  width: 137px;
-  height: 144px;
-  border-radius: 20px 0px 0px 20px;
-  border: 5px solid #FFFFFF;
-}
-
-.three1 {
-  display: flex;
-  width: 344px;
-  height: 144px;
-  background-color: white;
-  border-radius: 20px;
-  cursor: pointer;
-  align-items: center;
-  margin-left: 40px;
-  margin-top: 33px;
-}
-
-.three1 img {
-  width: 137px;
-  height: 144px;
-  border-radius: 20px 0px 0px 20px;
-  border: 5px solid #FFFFFF;
 }
 .citycards{
   margin-top: 20px;
@@ -638,3 +479,391 @@ header {
 .Hfooter{
   padding-bottom: 20px;
 }
+
+       /* <⁡⁢⁣⁢======================================== Styles pour les écrans de téléphone ========================================>⁡ */
+
+       @media (max-width: 767px) {
+        header {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        }
+        
+        .logo {
+        width: 100%;
+        text-align: center;
+        order: 1;
+        object-fit: contain;
+        margin-bottom: 20px; 
+        }
+        
+        nav {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        order: 2;
+        }
+        
+        .navlinks {
+        width: 100%;
+        flex-wrap: wrap;
+        align-items: center;
+        }
+        
+        .navlinks li {
+        margin-right: 0;
+        margin-bottom: 10px;
+        width: 50%;
+        text-align: center;
+        position: relative;
+        }
+        
+        .navlinks li a:hover::before,
+        .navlinks li a:active::before {
+        content: "";
+        position: absolute;
+        bottom: -23.09px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #0065fc;
+        transform: scaleX(1);
+        }
+        
+        .navlinks li a::before {
+        content: "";
+        position: absolute;
+        bottom: -23.09px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #f2f2f2;
+        transform: scaleX(1);
+        }
+        
+        .logo {
+        margin-top: 30.53px;
+        }
+        
+        .Filtres {
+        width: 100%;
+        text-align: left;
+        }
+        
+        .filter-bar {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        }
+        
+        .filters-button{
+        width: 48%;
+        margin: 1%;
+        }
+      
+        #fusion-filtres{
+          flex-direction: column;
+        }
+        
+        .testingflex{
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 100%;
+      
+        
+        }
+        
+        .pluspop{
+        align-items: center ;
+        justify-content: center ;
+        }
+        
+        .card{
+        width: 100% ;
+        height: 100%;
+        display: flex ;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 auto;
+        border-radius: 0%;
+        background-color:white;
+        }
+      
+      .one{
+        width: 335px;
+        filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+        
+      }
+      
+      .one img { object-fit: cover ; 
+      
+      }
+      
+      .lastcard {
+        margin-right: 0;
+        justify-content: center ;
+        width: 335px;
+        height: 190px;
+        margin-bottom: 24px;
+      }
+      .lastcard img {
+        width: 100%;
+        height: 130px;
+        object-fit: cover;
+      }
+        
+       .wrapper {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        }
+        
+        .container{
+        max-width: 500px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        }
+        
+        
+        .logo {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+        }
+      
+      
+        .citycards{
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          align-content: space-between;
+          margin-bottom: 60px;
+          justify-content: center;
+          margin-left: 0;
+          filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+        }
+      
+        .footer{
+          margin: 0;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          background-color: #F2F2F2;;
+          text-decoration: none;  
+          font-family: "Raleway" , sans-serif;
+          font-size: 18px;
+          font-weight: 700;
+          line-height: 21px;
+          letter-spacing: 0em;
+          text-align: left;
+        
+        }
+        .footer div {
+          margin-top: 30px;
+        }
+      
+        #titlecardsHB{
+          font-family: 'Raleway';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 22px;
+          line-height: 26px;
+          margin-right: 60px;
+          margin-left: 0%;
+        }
+      
+        #tilecards{
+          margin-left: 10px;
+      
+        }
+      
+        .cardsclose{
+          color: white;
+        }
+
+        body{
+          overflow-x: hidden;
+        }
+        
+        
+      
+        }
+      
+/* ==⁡⁢⁣⁣========================================== Styles pour les écrans de tablette ===================================================== ⁡*/
+
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+  
+  .navlinks li {
+  font-size: 14px;
+  }
+  
+  header {
+  padding: 20px 5%;
+  }
+  
+  .logo {
+  width: 50.92px;
+  height: 16px;
+  }
+  
+  .titre {
+  padding: 20px 5%;
+  }
+  
+  #bold-title {
+  font-size: 18px;
+  }
+  
+  #light-title {
+  font-size: 14px;
+  margin-top: 6px;
+  }
+  
+  .formbutton {
+  padding: 15px 5%;
+  }
+  
+  #geolocation-button {
+  width: 40px;
+  height: 39px;
+  border-radius: 12px 0px 0px 12px;
+  }
+  
+  .vector {
+  width: 11px;
+  height: 14px;
+  border-radius: 12px 12px 0px 0px;
+  }
+  
+  .search {
+  height: 39px;
+  width: 212px;
+  padding-left: 12px;
+  }
+  
+  .search::placeholder {
+  font-size: 16px;
+  }
+  
+  .submit {
+  font-size: 16px;
+  height: 39px;
+  width: 110px;
+  border-radius: 0% 12px 12px 0%;
+  }
+  
+  #fusion-filtres {
+  justify-content: center;
+  }
+  
+  .Filtres {
+  font-size: 16px;
+  padding: 0px 5%;
+  }
+  
+  .filters-button {
+  height: 40px;
+  font-size: 16px;
+  }
+
+  .testingflex {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    
+  }
+  .container-pluspop {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    display: flex;
+    margin-right: 40px;
+    margin-top: 60px;
+
+  }
+  .card{
+    margin-left: 0%;
+  }
+
+  .pluspop {
+  padding: 0%;
+  height: 280px;
+  width: 870px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-onepage{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding-left: 40px;
+ 
+}
+
+.one-page{
+  margin-left: 0%;
+  width: 250px;
+  height: 145px;
+  margin-right: 20px;
+}
+
+.cardsfooter{
+  width: 170px;
+  height: 200px;
+}
+
+.lastcard {
+  height: 260px;
+}
+
+
+.footer{
+  width: 800px;
+  height: 225px;
+}
+
+.downcard1{
+  margin: 10px,10px,10px,10px;
+font-family: "Raleway";
+font-size: 16px;
+font-weight: 700;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+
+#titlecardsHB{
+  margin : 0%;
+  padding-left: 60px;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  margin-right: 60px;
+  margin-left: 0%;
+}
+
+/* ici 500 px de margin peut être remplacé par justify-content: space-between; mais ou ? */
+#stonkslogo {
+  margin-left: 500px;
+  justify-content: space-between;
+}
+
+  
+  }
