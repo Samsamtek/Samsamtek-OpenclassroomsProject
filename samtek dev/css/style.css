@@ -562,6 +562,16 @@ ici j'ai un probleme avec le mots filtres j'arrive pas a comprendre comment mett
         width: 48%;
         margin: 1%;
         }
+
+        .mini-ligne{
+          padding-right: 0%;
+        }
+
+        #circle-infobar{
+          margin-bottom: 15px;
+          
+        }
+
       
         #fusion-filtres{
           flex-direction: column;
