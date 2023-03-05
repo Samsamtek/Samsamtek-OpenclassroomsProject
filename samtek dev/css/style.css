@@ -771,6 +771,19 @@ ici j'ai un probleme avec le mots filtres j'arrive pas a comprendre comment mett
   .filters-button {
   height: 40px;
   font-size: 16px;
+  padding-left: 10px;
+  }
+
+  .filter-bar{
+    margin-left: -50px;
+  }
+
+  .mini-ligne{
+    padding-left: 60px;
+  }
+
+  .cardsclose{
+    margin-left: 60px;
   }
 
   .testingflex {
@@ -804,6 +817,7 @@ ici j'ai un probleme avec le mots filtres j'arrive pas a comprendre comment mett
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  padding-right: 20px;
 }
 
 .container-onepage{
@@ -858,6 +872,7 @@ text-align: left;
   margin-right: 60px;
   margin-left: 0%;
 }
+
 
 /* ici 500 px de margin peut être remplacé par justify-content: space-between; mais ou ? */
 #stonkslogo {
