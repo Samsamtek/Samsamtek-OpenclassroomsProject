@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 
 
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -244,7 +245,7 @@ header {
 }
 
 .card {
-  height: 626px;
+  min-height: 625px;
   width: 880px;
   left: 0px;
   top: 0px;
@@ -254,7 +255,7 @@ header {
   padding-top: 40px;
 }
 
-#titlecards {
+.titlecards {
   margin-left: 40px;
   margin-top: 20px;
   display: block;
@@ -316,13 +317,12 @@ header {
   margin-bottom: 30px;
   
 }
-#star{
+.star{
   max-width: 70px;
   max-height: 12px;
   margin-top: 9px;
   border-radius: 0%;
-  border: 0px solid #FFFFFF;
-  
+  border: 0px solid #FFFFFF !important;
 }
 
 .one img {
@@ -359,7 +359,7 @@ header {
 .testingflex {
   align-content: center;
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
   justify-content: center;
   
 }
@@ -474,8 +474,7 @@ header {
 .Hfooter{
   padding-bottom: 20px;
 }
-
-       /* <⁡⁢⁣⁢======================================== Styles pour les écrans de téléphone ========================================>⁡ */
+/*style p⁡⁢⁣⁢our telephon⁡e */
 
        @media (max-width: 767px) {
         header {
@@ -703,7 +702,7 @@ header {
 /* ==⁡⁢⁣⁣========================================== Styles pour les écrans de tablette ===================================================== ⁡*/
 
 
-@media only screen and (min-width: 768px) and (max-width: 1380px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
 
   
   .navlinks li {
