@@ -27,7 +27,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 10%;
+  padding: 30px 50px;
 }
 
 .logo {
@@ -60,7 +60,7 @@ header {
 
 .titre {
   flex-wrap: wrap;
-  padding: 30px 10%;
+  padding: 30px 50px;
 }
 
 #bold-title {
@@ -83,7 +83,7 @@ header {
   min-height: 49px;
   display: flex;
   align-items: center;
-  padding: 20px 10%;
+  padding: 20px 50px;
 }
 
 #geolocation-button {
@@ -152,7 +152,7 @@ header {
 
 .Filtres {
   align-self: center ;
-  padding: 0px 0px 0px 10%;
+  padding: 0px 0px 0px 50px;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -213,7 +213,7 @@ header {
 .mini-ligne {
   display: flex;
   align-items: flex-end;
-  padding: 10px 10%;
+  padding: 10px 50px;
   margin-bottom: 40px;
 }
 
@@ -245,8 +245,9 @@ header {
 }
 
 .card {
+
   min-height: 625px;
-  width: 880px;
+  width: 60%;
   left: 0px;
   top: 0px;
   border-radius: 20px;
@@ -309,7 +310,7 @@ header {
 }
 
 .one {
-  width: 246px;
+  width: 30%;
   height: 199px;
   background-color: white;
   border-radius: 20px;
@@ -347,7 +348,7 @@ header {
 .pluspop {
   background: rgba(242, 242, 242, 1);
   height: 625px;
-  width: 420px;
+  width: 100%;
   left: 0px;
   top: 0px;
   border-radius: 20px;
@@ -356,11 +357,18 @@ header {
   padding-top: 40px;
 }
 
+.container-onepage{
+  width: 100%;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+
+}
+
 .testingflex {
   align-content: center;
   display: flex;
   align-items: flex-start;
-  justify-content: center;
   
 }
 
@@ -375,15 +383,16 @@ header {
 
 }
 
+
+
 .one-page {
   display: flex;
-  width: 344px;
+  width: 90%;
   height: 144px;
   background-color: white;
   border-radius: 20px;
   cursor: pointer;
   align-items: center;
-  margin-left: 40px;
   margin-top: 26px;
 }
 
@@ -394,9 +403,17 @@ header {
   border: 5px solid #FFFFFF;
   
 }
+
+.container-pluspop {
+  width: 30%;
+}
+
+
+
 .citycards{
+  margin-left: 50px;
+  width: 100%;
   margin-top: 20px;
-  margin-left: 40px;
   display: flex;
   align-content: space-between;
   margin-bottom: 60px;
@@ -404,7 +421,7 @@ header {
 }
 .lastcard {
   background-color: white;
-  width: 80px;
+  width: 20%;
   height: 450px;
   width: 302px;
   left: 0px;
@@ -413,7 +430,7 @@ header {
   margin-right: 50px;
 }
 .cardsfooter{
-  width: 302px;
+  width: 100%;
   height: 400px;
   border-radius: 20px 20px 0px 0px;
 }
@@ -438,8 +455,7 @@ header {
   display: flex;
   justify-content: space-around;
   padding-top: 45px ;
-  margin-left: 40px;
-  width: 1339px;
+  width: auto;
   height: 225px;
   background-color: #F2F2F2;;
   text-decoration: none;  
@@ -449,6 +465,8 @@ header {
   line-height: 21px;
   letter-spacing: 0em;
   text-align: left;
+  margin-left: 50px;
+  margin-right: 50px;
 
 }
 
@@ -474,7 +492,7 @@ header {
 .Hfooter{
   padding-bottom: 20px;
 }
-/*style p⁡⁢⁣⁢our telephon⁡e */
+/*⁡⁢⁣⁢==⁡⁢⁣⁢==================================================== style pour telephone =====================================================⁡=⁡ */
 
        @media (max-width: 767px) {
         header {
@@ -580,15 +598,26 @@ header {
         }
         
         .pluspop{
+        width: 100%;
+        margin: 0%;
         align-items: center ;
         justify-content: center ;
         }
-        
+        .one-page{
+          width: 90%;
+          margin-left: 5%;
+
+        }
+
+
+
+
         .card{
         width: 100% ;
         height: 100%;
         display: flex ;
         flex-wrap: wrap;
+        flex-direction: column;
         justify-content: center;
         margin: 0 auto;
         border-radius: 0%;
@@ -596,7 +625,7 @@ header {
         }
       
       .one{
-        width: 335px;
+        width: 90%;
         filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
         
       }
@@ -608,7 +637,7 @@ header {
       .lastcard {
         margin-right: 0;
         justify-content: center ;
-        width: 335px;
+        width: 90%;
         height: 190px;
         margin-bottom: 24px;
       }
@@ -622,6 +651,7 @@ header {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        align-items: center;
         }
         
         .container{
@@ -636,6 +666,10 @@ header {
         text-align: center;
         margin-bottom: 20px;
         }
+
+      .container-pluspop{
+        width: fit-content;
+      }
       
       
         .citycards{
@@ -679,7 +713,7 @@ header {
           font-size: 22px;
           line-height: 26px;
           margin-right: 60px;
-          margin-left: 0%;
+          margin-left: 5%;
         }
       
         #tilecards{
@@ -826,8 +860,7 @@ header {
   }
 
   .one{
-    width: 280px;
-    margin: 20px 20px;
+    width: 30%;
   }
   .pluspop {
   padding: 0%;
@@ -858,7 +891,7 @@ header {
 }
 
 .cardsfooter{
-  width: 170px;
+  width: 100%;
   height: 200px;
 }
 
@@ -896,13 +929,17 @@ text-align: left;
   margin-left: 0%;
 }
 
+.citycards{
+  width: 95%;
+ justify-content: space-around;
+}
 
 #stonkslogo {
   margin-left: 500px;
   justify-content: space-between;
 }
 .lastcard{
-  width: 170px !important;
+  width: 100%
   margin-right: 20px;
 }
 
