@@ -378,7 +378,7 @@ header {
   left: 0px;
   top: 0px;
   border-radius: 0px;
-  margin-left: 118px;
+  margin-left: 35%;
   cursor: pointer;
 
 }
@@ -652,6 +652,7 @@ header {
         flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
+        max-width: 100%;
         }
         
         .container{
@@ -728,8 +729,13 @@ header {
         body{
           overflow-x: hidden;
         }
-        
-        
+        #stonkslogo {
+          margin-left: 45px;
+          justify-content: space-between;
+        }
+        .formbutton {
+          padding: 15px 5%;
+          }
       
         }
       
@@ -746,6 +752,7 @@ header {
   header {
   padding: 20px 5%;
   }
+  
   
   .logo {
   width: 50.92px;
